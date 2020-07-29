@@ -7,17 +7,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Meals-->
         <scene sceneID="swf-3P-Ax7">
             <objects>
                 <viewController id="qHW-QB-jgt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eue-qv-MS9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Third View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3u0-d6-mSB">
+                                <rect key="frame" x="126" y="427" width="164" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="FMV-ek-C49"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2dp-o3-y03"/>
+                    <tabBarItem key="tabBarItem" title="Meals" image="rectangle.3.offgrid" catalog="system" id="2dp-o3-y03"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iou-2M-lbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,8 +40,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="131.5" y="426.5" width="151" height="43"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Meditation" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="125" y="424.5" width="164.5" height="43"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="highlightedColor"/>
@@ -42,6 +51,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hU6-Mx-d6a">
+                                <rect key="frame" x="0.0" y="581" width="414" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Stretches"/>
+                                <connections>
+                                    <segue destination="sZE-gS-Zkl" kind="show" id="aeF-PJ-rgW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ztF-wL-1jr">
+                                <rect key="frame" x="0.0" y="655" width="414" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Breathing Exercises"/>
+                                <connections>
+                                    <segue destination="wp3-ph-MnW" kind="show" id="apX-B7-ifQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -52,29 +79,54 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Meditation" image="circle.bottomthird.split" catalog="system" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1451" y="-303"/>
+            <point key="canvasLocation" x="1450.7246376811595" y="-303.34821428571428"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
+        <scene sceneID="hKS-mi-RNh">
+            <objects>
+                <viewController id="sZE-gS-Zkl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sF4-hi-yhI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="O1t-fr-i9V"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AXg-cn-rd4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btT-Hc-Fzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2234" y="-547"/>
+        </scene>
+        <!--Journal-->
         <scene sceneID="Xh0-8I-xyd">
             <objects>
                 <viewController id="o7f-yb-Bsb" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vlH-rG-hNC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Fourth View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ecV-Zq-al3">
+                                <rect key="frame" x="115" y="427" width="185" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1Or-wr-ebD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Txy-Ur-vBP"/>
+                    <tabBarItem key="tabBarItem" title="Journal" image="pencil.tip.crop.circle" catalog="system" id="Txy-Ur-vBP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odS-bM-NYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="801" y="786"/>
         </scene>
-        <!--Second-->
+        <!--Workout-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Simply_Fit" customModuleProvider="target" sceneMemberID="viewController">
@@ -103,11 +155,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Workout" image="person.circle" catalog="system" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1451" y="359"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1u6-z7-vDl">
+            <objects>
+                <viewController id="wp3-ph-MnW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MOn-8j-P1j">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="bQi-4X-NVr"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Iqv-H0-IpT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKt-t7-bC9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2230" y="153"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -131,7 +199,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="circle.bottomthird.split" catalog="system" width="128" height="121"/>
+        <image name="pencil.tip.crop.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
     </resources>
 </document>
