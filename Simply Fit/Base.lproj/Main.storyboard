@@ -155,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QgB-ts-BHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2698.5507246376815" y="-1090.1785714285713"/>
+            <point key="canvasLocation" x="2920" y="-1211"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kvh-RB-l0g">
@@ -187,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iM5-eQ-8gY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3106" y="-1894"/>
+            <point key="canvasLocation" x="3897" y="-1915"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZQ8-wa-ixg">
@@ -219,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeN-aC-fWW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3579.7101449275365" y="-1199.3303571428571"/>
+            <point key="canvasLocation" x="3896" y="-1211"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nwB-b1-3sJ">
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="coB-uy-VLO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3373.913043478261" y="-455.35714285714283"/>
+            <point key="canvasLocation" x="3896" y="-469"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hKS-mi-RNh">
@@ -321,22 +321,11 @@
                                     <segue destination="sZE-gS-Zkl" kind="show" id="RZJ-Fj-s5i"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKB-jY-40u">
-                                <rect key="frame" x="0.0" y="484" width="414" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
-                                <state key="normal" title="Legs and Glutes">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Fnp-Xx-sDj" kind="show" id="Byb-Si-S3g"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqB-Ls-9dP">
                                 <rect key="frame" x="0.0" y="633" width="414" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
-                                <state key="normal" title="Abs">
+                                <state key="normal" title="Legs and Glutes">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
@@ -365,6 +354,17 @@
                                 </state>
                                 <connections>
                                     <segue destination="teo-PC-CZa" kind="show" id="0dh-9i-bBH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKB-jY-40u">
+                                <rect key="frame" x="-47" y="463" width="508" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
+                                <state key="normal" title="Abs">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Fnp-Xx-sDj" kind="show" id="Byb-Si-S3g"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -426,7 +426,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gF-uL-qKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4566.666666666667" y="358.92857142857139"/>
+            <point key="canvasLocation" x="3712" y="359"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NgY-oV-XqC">
@@ -580,7 +580,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j1L-Sb-Vrv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1979.7101449275365" y="1920.5357142857142"/>
+            <point key="canvasLocation" x="2919" y="1921"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="U55-Zz-LmY">
@@ -612,7 +612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCI-ve-G61" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3105.7971014492755" y="1920.5357142857142"/>
+            <point key="canvasLocation" x="3896" y="1921"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1u6-z7-vDl">
@@ -690,7 +690,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UJ-rb-sa1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2434.7826086956525" y="1222.7678571428571"/>
+            <point key="canvasLocation" x="3896" y="1250"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h1V-cx-oMT">
@@ -722,12 +722,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mee-RU-MDt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2594.202898550725" y="2668.5267857142858"/>
+            <point key="canvasLocation" x="3896" y="2654"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Byb-Si-S3g"/>
-        <segue reference="rxn-Cy-qdy"/>
+        <segue reference="RZJ-Fj-s5i"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="circle.bottomthird.split" catalog="system" width="128" height="121"/>
