@@ -9,25 +9,31 @@
 /* Begin PBXBuildFile section */
 		1862F9CD24D1FABE00679319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F9CC24D1FABE00679319 /* AppDelegate.swift */; };
 		1862F9CF24D1FABE00679319 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F9CE24D1FABE00679319 /* SceneDelegate.swift */; };
-		1862F9D124D1FABE00679319 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F9D024D1FABE00679319 /* FirstViewController.swift */; };
-		1862F9D324D1FABE00679319 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F9D224D1FABE00679319 /* SecondViewController.swift */; };
+		1862F9D124D1FABE00679319 /* InspirationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F9D024D1FABE00679319 /* InspirationViewController.swift */; };
+		1862F9D324D1FABE00679319 /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1862F9D224D1FABE00679319 /* WorkoutViewController.swift */; };
 		1862F9D624D1FABE00679319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1862F9D424D1FABE00679319 /* Main.storyboard */; };
 		1862F9D924D1FABE00679319 /* Simply_Fit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1862F9D724D1FABE00679319 /* Simply_Fit.xcdatamodeld */; };
 		1862F9DB24D1FAC500679319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1862F9DA24D1FAC500679319 /* Assets.xcassets */; };
 		1862F9DE24D1FAC500679319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1862F9DC24D1FAC500679319 /* LaunchScreen.storyboard */; };
+		FE159B5024D2B445008C9FE4 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE159B4F24D2B445008C9FE4 /* MealsViewController.swift */; };
+		FE159B5224D2B47B008C9FE4 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE159B5124D2B47B008C9FE4 /* JournalViewController.swift */; };
+		FE159B5424D2B4AB008C9FE4 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE159B5324D2B4AB008C9FE4 /* MeditationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1862F9C924D1FABE00679319 /* Simply Fit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Fit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1862F9CC24D1FABE00679319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1862F9CE24D1FABE00679319 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1862F9D024D1FABE00679319 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1862F9D224D1FABE00679319 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1862F9D024D1FABE00679319 /* InspirationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspirationViewController.swift; sourceTree = "<group>"; };
+		1862F9D224D1FABE00679319 /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
 		1862F9D524D1FABE00679319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1862F9D824D1FABE00679319 /* Simply_Fit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simply_Fit.xcdatamodel; sourceTree = "<group>"; };
 		1862F9DA24D1FAC500679319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1862F9DD24D1FAC500679319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1862F9DF24D1FAC500679319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE159B4F24D2B445008C9FE4 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		FE159B5124D2B47B008C9FE4 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
+		FE159B5324D2B4AB008C9FE4 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +68,16 @@
 			children = (
 				1862F9CC24D1FABE00679319 /* AppDelegate.swift */,
 				1862F9CE24D1FABE00679319 /* SceneDelegate.swift */,
-				1862F9D024D1FABE00679319 /* FirstViewController.swift */,
-				1862F9D224D1FABE00679319 /* SecondViewController.swift */,
+				1862F9D024D1FABE00679319 /* InspirationViewController.swift */,
+				1862F9D224D1FABE00679319 /* WorkoutViewController.swift */,
 				1862F9D424D1FABE00679319 /* Main.storyboard */,
 				1862F9DA24D1FAC500679319 /* Assets.xcassets */,
 				1862F9DC24D1FAC500679319 /* LaunchScreen.storyboard */,
 				1862F9DF24D1FAC500679319 /* Info.plist */,
 				1862F9D724D1FABE00679319 /* Simply_Fit.xcdatamodeld */,
+				FE159B4F24D2B445008C9FE4 /* MealsViewController.swift */,
+				FE159B5124D2B47B008C9FE4 /* JournalViewController.swift */,
+				FE159B5324D2B4AB008C9FE4 /* MeditationViewController.swift */,
 			);
 			path = "Simply Fit";
 			sourceTree = "<group>";
@@ -144,11 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1862F9D324D1FABE00679319 /* SecondViewController.swift in Sources */,
-				1862F9D124D1FABE00679319 /* FirstViewController.swift in Sources */,
+				1862F9D324D1FABE00679319 /* WorkoutViewController.swift in Sources */,
+				FE159B5024D2B445008C9FE4 /* MealsViewController.swift in Sources */,
+				1862F9D124D1FABE00679319 /* InspirationViewController.swift in Sources */,
 				1862F9CD24D1FABE00679319 /* AppDelegate.swift in Sources */,
 				1862F9D924D1FABE00679319 /* Simply_Fit.xcdatamodeld in Sources */,
 				1862F9CF24D1FABE00679319 /* SceneDelegate.swift in Sources */,
+				FE159B5424D2B4AB008C9FE4 /* MeditationViewController.swift in Sources */,
+				FE159B5224D2B47B008C9FE4 /* JournalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

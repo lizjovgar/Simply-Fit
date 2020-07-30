@@ -10,7 +10,7 @@
         <!--Meditation-->
         <scene sceneID="RG7-z4-Vgc">
             <objects>
-                <viewController id="2GW-Tm-t2F" sceneMemberID="viewController">
+                <viewController id="2GW-Tm-t2F" customClass="MeditationViewController" customModule="Simply_Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Euq-AT-QmR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
         <!--Meals-->
         <scene sceneID="swf-3P-Ax7">
             <objects>
-                <viewController id="qHW-QB-jgt" sceneMemberID="viewController">
+                <viewController id="qHW-QB-jgt" customClass="MealsViewController" customModule="Simply_Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eue-qv-MS9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,9 @@
                                 <state key="normal" title="Click for more inspiration">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="newQuoteButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="BUq-e2-nnl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.8694023519523183" blue="0.92682097612216241" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -101,6 +104,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Inspiration" image="house" catalog="system" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="quote" destination="KQZ-1w-vlD" id="dBI-n6-9Mw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -315,7 +321,7 @@
         <!--Journal-->
         <scene sceneID="Xh0-8I-xyd">
             <objects>
-                <viewController id="o7f-yb-Bsb" sceneMemberID="viewController">
+                <viewController id="o7f-yb-Bsb" customClass="JournalViewController" customModule="Simply_Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vlH-rG-hNC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -846,7 +852,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RZJ-Fj-s5i"/>
+        <segue reference="rxn-Cy-qdy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="circle.bottomthird.split" catalog="system" width="128" height="121"/>
