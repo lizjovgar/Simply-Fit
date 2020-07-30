@@ -56,7 +56,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM5-7f-MBo">
-                                <rect key="frame" x="20" y="82" width="294" height="810"/>
+                                <rect key="frame" x="20" y="53" width="294" height="810"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">1. Oatmeal with Berries
 
@@ -84,7 +84,7 @@
 
 7. Nuts
 </string>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -641,6 +641,36 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="60" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9r4-Xz-A7L">
+                                <rect key="frame" x="23" y="72" width="371" height="718"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">1.      Arm across
+2.      Lying spinal twist
+3.      Cobra
+4.      Kneeling reach
+5.      Downward-facing dog
+6.      Seated forward bend
+7.      Touch your toes
+8.      Reach up towards the ceiling 
+9.      Head tilt
+10.     Head turn
+11.     Butterfly stretch
+12.     Lying down hamstring stretch
+13.     Pigeon
+14.     Triceps stretch
+15.     Ankle over knee
+16.     Knee to chest
+17.     Low lunge
+18.     Wall downdog
+19.     Child's pose
+20.     Cat / Cow pose
+
+
+</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.81690335270000003" green="0.87857341769999997" blue="0.89098978039999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1t-fr-i9V"/>
@@ -649,7 +679,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="btT-Hc-Fzi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1575" y="-571"/>
+            <point key="canvasLocation" x="-1575.3623188405797" y="-571.20535714285711"/>
         </scene>
         <!--Daily Journal-->
         <scene sceneID="68e-Ki-bwT">
