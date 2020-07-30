@@ -16,7 +16,6 @@
 		1862F9DB24D1FAC500679319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1862F9DA24D1FAC500679319 /* Assets.xcassets */; };
 		1862F9DE24D1FAC500679319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1862F9DC24D1FAC500679319 /* LaunchScreen.storyboard */; };
 		FE159B5024D2B445008C9FE4 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE159B4F24D2B445008C9FE4 /* MealsViewController.swift */; };
-		FE159B5224D2B47B008C9FE4 /* JournalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE159B5124D2B47B008C9FE4 /* JournalViewController.swift */; };
 		FE159B5424D2B4AB008C9FE4 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE159B5324D2B4AB008C9FE4 /* MeditationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		1862F9DD24D1FAC500679319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1862F9DF24D1FAC500679319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE159B4F24D2B445008C9FE4 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
-		FE159B5124D2B47B008C9FE4 /* JournalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewController.swift; sourceTree = "<group>"; };
 		FE159B5324D2B4AB008C9FE4 /* MeditationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +74,6 @@
 				1862F9DF24D1FAC500679319 /* Info.plist */,
 				1862F9D724D1FABE00679319 /* Simply_Fit.xcdatamodeld */,
 				FE159B4F24D2B445008C9FE4 /* MealsViewController.swift */,
-				FE159B5124D2B47B008C9FE4 /* JournalViewController.swift */,
 				FE159B5324D2B4AB008C9FE4 /* MeditationViewController.swift */,
 			);
 			path = "Simply Fit";
@@ -160,7 +157,6 @@
 				1862F9D924D1FABE00679319 /* Simply_Fit.xcdatamodeld in Sources */,
 				1862F9CF24D1FABE00679319 /* SceneDelegate.swift in Sources */,
 				FE159B5424D2B4AB008C9FE4 /* MeditationViewController.swift in Sources */,
-				FE159B5224D2B47B008C9FE4 /* JournalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

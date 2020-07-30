@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="z5D-bZ-BpB">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -408,29 +408,34 @@
             </objects>
             <point key="canvasLocation" x="-1575" y="-571"/>
         </scene>
-        <!--Journal-->
-        <scene sceneID="Xh0-8I-xyd">
+        <!--Daily Journal-->
+        <scene sceneID="68e-Ki-bwT">
             <objects>
-                <viewController id="o7f-yb-Bsb" customClass="JournalViewController" customModule="Simply_Fit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vlH-rG-hNC">
+                <tableViewController id="0P9-Nw-6oc" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tsZ-1a-3MN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Daily Journal" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ecV-Zq-al3">
-                                <rect key="frame" x="101" y="61" width="213" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.94814008474349976" green="0.85902018203979091" blue="0.69216588988199412" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="1Or-wr-ebD"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Journal" image="pencil.tip.crop.circle" catalog="system" id="Txy-Ur-vBP"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="odS-bM-NYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" red="0.9481400847" green="0.85902018199999997" blue="0.69216588990000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wYH-Xn-qJ4">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wYH-Xn-qJ4" id="pzb-qZ-JpD">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0P9-Nw-6oc" id="EE9-eD-RAt"/>
+                            <outlet property="delegate" destination="0P9-Nw-6oc" id="bCk-bW-JVF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Daily Journal" id="c4i-Yg-Le1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mLH-LA-pls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="907"/>
+            <point key="canvasLocation" x="1402.8985507246377" y="912.72321428571422"/>
         </scene>
         <!--Workout-->
         <scene sceneID="wg7-f3-ORb">
@@ -514,7 +519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1451" y="493"/>
+            <point key="canvasLocation" x="2360.8695652173915" y="492.85714285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lba-Xu-ma7">
@@ -587,7 +592,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gF-uL-qKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3712" y="359"/>
+            <point key="canvasLocation" x="4621.739130434783" y="358.92857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NgY-oV-XqC">
@@ -666,7 +671,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dz9-ze-eoy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5261" y="493"/>
+            <point key="canvasLocation" x="6171.0144927536239" y="492.85714285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Fg6-dJ-LTH">
@@ -707,7 +712,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccv-Ef-CyD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5262" y="1250"/>
+            <point key="canvasLocation" x="6171.0144927536239" y="1249.5535714285713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fDY-aC-ZEN">
@@ -856,8 +861,8 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="qHW-QB-jgt" kind="relationship" relationship="viewControllers" id="0jm-Mf-Ej7"/>
-                        <segue destination="o7f-yb-Bsb" kind="relationship" relationship="viewControllers" id="7q4-JH-y38"/>
                         <segue destination="2GW-Tm-t2F" kind="relationship" relationship="viewControllers" id="pMt-Y8-tTx"/>
+                        <segue destination="z5D-bZ-BpB" kind="relationship" relationship="viewControllers" id="7tL-z3-A8r"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -900,7 +905,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UJ-rb-sa1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3896" y="1250"/>
+            <point key="canvasLocation" x="4805.7971014492759" y="1249.5535714285713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h1V-cx-oMT">
@@ -955,6 +960,25 @@
             </objects>
             <point key="canvasLocation" x="762" y="-2801"/>
         </scene>
+        <!--Daily Journal-->
+        <scene sceneID="g9g-7E-MQf">
+            <objects>
+                <navigationController title="Daily Journal" automaticallyAdjustsScrollViewInsets="NO" id="z5D-bZ-BpB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="QKX-rI-ctA"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oZU-ft-FwT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0P9-Nw-6oc" kind="relationship" relationship="rootViewController" id="rsr-Zx-DJD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dRo-fe-COs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492.75362318840581" y="912.72321428571422"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="rxn-Cy-qdy"/>
@@ -962,7 +986,6 @@
     <resources>
         <image name="circle.bottomthird.split" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="110"/>
-        <image name="pencil.tip.crop.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
     </resources>
