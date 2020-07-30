@@ -52,11 +52,11 @@
             <objects>
                 <viewController id="vCK-ei-iZe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qXo-oG-jYW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM5-7f-MBo">
-                                <rect key="frame" x="46" y="120" width="294" height="721"/>
+                                <rect key="frame" x="20" y="82" width="294" height="810"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">1. Oatmeal with Berries
 
@@ -84,14 +84,21 @@
 
 7. Nuts
 </string>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Breakfast " textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="XPN-2K-9G3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8972220138" green="0.82242122429999998" blue="0.98099297289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="bcW-8e-M6j"/>
                     </view>
+                    <navigationItem key="navigationItem" id="sRM-ro-noN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wx9-sT-MKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,6 +126,9 @@
                                 <state key="normal" title="Breakfast">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vCK-ei-iZe" kind="show" id="EGJ-yo-cDx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wli-RC-lEh">
                                 <rect key="frame" x="78" y="468" width="258" height="52"/>
@@ -128,6 +138,9 @@
                                 <state key="normal" title="Dinner">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="jb3-RA-twK" kind="show" id="LQm-uZ-NeM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAa-E3-EXo">
                                 <rect key="frame" x="78" y="622" width="258" height="52"/>
@@ -137,6 +150,9 @@
                                 <state key="normal" title="Snacks">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="nQ3-U4-aWT" kind="show" id="D7v-xk-Klg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhw-SI-nPh">
                                 <rect key="frame" x="78" y="318" width="258" height="52"/>
@@ -146,6 +162,9 @@
                                 <state key="normal" title="Lunch">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="i7n-5j-HYl" kind="show" id="ndb-Oz-i14"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.89722201380151356" green="0.82242122427100495" blue="0.98099297289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -162,63 +181,105 @@
             <objects>
                 <viewController id="jb3-RA-twK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kb6-mW-i1I">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxJ-8x-X7O">
-                                <rect key="frame" x="171" y="127" width="166" height="581"/>
+                                <rect key="frame" x="20" y="93" width="333" height="718"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Proten 
-Chicken
-Fish 
-Tofu
+                                <string key="text">1. Proten 
+      -Chicken
+      -Fish 
+      -Tofu
 
-Greens
-Brussel Sprouts 
-Carrots
-Zucchini
-Squash 
-Asparagus 
-Green Beans
-Peas
-Broccoli
-Lentils
-Cauliflower
-Beets
+2. Greens
+      -Brussel Sprouts 
+      -Carrots
+      -Zucchini
+      -Squash 
+      -Asparagus 
+      -Green Beans
+      -Peas
+      -Broccoli
+      -Lentils
+      -Cauliflower
+      -Beets
 
-Starch
-Baked Potatoes
-Sweet Potatoes
-Mashed Potatoes
-Brown Rice
+3. Starch
+      -Baked Potatoes
+      -Sweet Potatoes
+      -Mashed Potatoes
+      -Brown Rice
 </string>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Dinner" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="ya3-DE-dUG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8972220138" green="0.82242122429999998" blue="0.98099297289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="4Cq-9w-Q8s"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ove-wV-5pD"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Umo-ct-F5R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="849" y="-2074"/>
+            <point key="canvasLocation" x="847.82608695652175" y="-2075.2232142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="dIG-hj-dYp">
             <objects>
                 <viewController id="nQ3-U4-aWT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aYn-zv-oaK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Snacks" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="xyr-td-8UD">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Bq-hw-M6J">
+                                <rect key="frame" x="20" y="103" width="342" height="718"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">1. Protein Shake
+
+2. Smoothie with Fruits and Vegetables
+
+3. Carrots, Cucumber, and Hummus
+
+4. Greek Yogurt
+
+5. Peanut Butter and Apples / Bananas
+
+6. Trail Mix
+
+7. Nuts
+
+8. Fruit
+
+9. Popcorn (without salt and butter)
+
+</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.8972220138" green="0.82242122429999998" blue="0.98099297289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="ETq-sQ-NTv"/>
                     </view>
+                    <navigationItem key="navigationItem" id="e05-QY-1Dm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJx-SQ-uFz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="-1543"/>
+            <point key="canvasLocation" x="0.0" y="-1543.5267857142856"/>
         </scene>
         <!--Meditation-->
         <scene sceneID="hNz-n2-bh7">
@@ -361,8 +422,15 @@ Brown Rice
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRP-Ux-avO">
+                                <rect key="frame" x="301" y="110" width="93" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYo-de-noJ">
-                                <rect key="frame" x="12" y="97" width="402" height="711"/>
+                                <rect key="frame" x="20" y="92" width="394" height="586"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">20 Crunches
 
@@ -387,13 +455,6 @@ Brown Rice
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRP-Ux-avO">
-                                <rect key="frame" x="301" y="96" width="93" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.72252996670421754" green="0.85199108759347986" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -410,7 +471,7 @@ Brown Rice
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iM5-eQ-8gY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3897" y="-1915"/>
+            <point key="canvasLocation" x="3895.652173913044" y="-1915.1785714285713"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ZQ8-wa-ixg">
@@ -433,7 +494,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3P-Ro-y68">
-                                <rect key="frame" x="6" y="131" width="402" height="711"/>
+                                <rect key="frame" x="20" y="92" width="388" height="711"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">30 Sit Ups 
 
@@ -483,7 +544,7 @@ Brown Rice
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qeN-aC-fWW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3896" y="-1211"/>
+            <point key="canvasLocation" x="3895.652173913044" y="-1211.3839285714284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nwB-b1-3sJ">
@@ -506,7 +567,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1N-v7-dmJ">
-                                <rect key="frame" x="12" y="113" width="402" height="678"/>
+                                <rect key="frame" x="12" y="134" width="402" height="678"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">40 Sit Ups
 
@@ -543,7 +604,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" 3 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7T-Hv-zMS">
-                                <rect key="frame" x="301" y="98" width="93" height="58"/>
+                                <rect key="frame" x="301" y="104" width="93" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -808,7 +869,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGf-Zp-oHO">
-                                <rect key="frame" x="20" y="97" width="402" height="711"/>
+                                <rect key="frame" x="20" y="33" width="328" height="711"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">30  Forward Arm Circles
 
@@ -832,7 +893,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edr-Fh-0ru">
-                                <rect key="frame" x="301" y="96" width="93" height="58"/>
+                                <rect key="frame" x="301" y="118" width="93" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -852,7 +913,7 @@ Brown Rice
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNh-XE-onZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5261" y="-263"/>
+            <point key="canvasLocation" x="5260.8695652173919" y="-263.16964285714283"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="QAx-FX-HAJ">
@@ -875,7 +936,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5L-T6-v6J">
-                                <rect key="frame" x="20" y="116" width="402" height="711"/>
+                                <rect key="frame" x="20" y="94" width="402" height="711"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">40 Forward Arm Circles
 
@@ -904,7 +965,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IY-x3-VXN">
-                                <rect key="frame" x="301" y="98" width="93" height="58"/>
+                                <rect key="frame" x="301" y="105" width="93" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -984,7 +1045,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tqt-Uo-Ihl">
-                                <rect key="frame" x="317" y="69" width="93" height="58"/>
+                                <rect key="frame" x="301" y="90" width="93" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -1102,7 +1163,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixa-kB-2ZS">
-                                <rect key="frame" x="20" y="122" width="394" height="648"/>
+                                <rect key="frame" x="20" y="109" width="394" height="648"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">35 Squats 
 
@@ -1131,7 +1192,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x78-n7-dm8">
-                                <rect key="frame" x="301" y="110" width="93" height="58"/>
+                                <rect key="frame" x="301" y="122" width="93" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -1222,7 +1283,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ug-k6-7e5">
-                                <rect key="frame" x="12" y="98" width="402" height="711"/>
+                                <rect key="frame" x="12" y="33" width="402" height="711"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">20 Squats 
 
@@ -1245,7 +1306,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKl-ba-orM">
-                                <rect key="frame" x="301" y="97" width="93" height="58"/>
+                                <rect key="frame" x="301" y="115" width="93" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -1337,7 +1398,7 @@ Brown Rice
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 Reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mlu-Qh-sMP">
-                                <rect key="frame" x="301" y="90" width="93" height="58"/>
+                                <rect key="frame" x="301" y="81" width="93" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -1366,11 +1427,11 @@ Brown Rice
             <objects>
                 <viewController id="i7n-5j-HYl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TrP-31-Nwp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNy-aw-Wur">
-                                <rect key="frame" x="77" y="205" width="163" height="581"/>
+                                <rect key="frame" x="24" y="70" width="192" height="753"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">1. Salad 
       -Lettuce
@@ -1396,18 +1457,25 @@ Brown Rice
 
 4. Soup
 </string>
-                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="26"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Lunch" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cBB-FS-BQH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.8972220138" green="0.82242122429999998" blue="0.98099297289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="yhg-gC-gxw"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DmI-wL-5B6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mx1-Ky-Ykc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="-2801"/>
+            <point key="canvasLocation" x="760.86956521739137" y="-2801.1160714285711"/>
         </scene>
         <!--Daily Journal-->
         <scene sceneID="g9g-7E-MQf">
