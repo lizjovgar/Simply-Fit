@@ -10,8 +10,11 @@ import UIKit
 
 class JournalTableViewController: UITableViewController {
 
+    var journalEntries : [JournalEntry] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        journalEntries = createJournalEntries()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -19,7 +22,19 @@ class JournalTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    func createJournalEntries() -> [JournalEntry] {
 
+      let swift = JournalEntry()
+      swift.date = "July 30, 2020"
+      swift.info = "today"
+
+      let dog = JournalEntry()
+      dog.date = "July 31, 2020"
+        dog.info = "tomorrow"
+      // important is set to false by default
+
+      return [swift, dog]
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
