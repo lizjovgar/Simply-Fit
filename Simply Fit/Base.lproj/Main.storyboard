@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -172,7 +172,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.99935662147051563" blue="0.94501045923751958" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="KiL-og-WlV" firstAttribute="top" secondItem="e8c-mV-lxH" secondAttribute="top" constant="160" id="3qJ-3Y-neM"/>
                             <constraint firstItem="MnV-xJ-0yU" firstAttribute="top" secondItem="KiL-og-WlV" secondAttribute="bottom" constant="116" id="NKP-p3-QbC"/>
@@ -488,7 +488,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99977976079999997" green="1" blue="0.94219678640000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="gdr-V4-mXL" firstAttribute="leading" secondItem="muB-am-3yc" secondAttribute="leading" constant="40" id="1uF-U7-ZXa"/>
                             <constraint firstItem="P9O-jO-wsX" firstAttribute="top" secondItem="muB-am-3yc" secondAttribute="top" constant="160" id="6kU-zC-hJL"/>
@@ -679,7 +679,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.99977976079999997" green="1" blue="0.94219678640000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vMK-UQ-Iyk" firstAttribute="leading" secondItem="9HM-Om-C1S" secondAttribute="leading" constant="40" id="187-a8-kyQ"/>
                             <constraint firstItem="vMK-UQ-Iyk" firstAttribute="top" secondItem="cgl-Iz-u8c" secondAttribute="bottom" constant="116" id="1ve-q8-hCz"/>
