@@ -54,13 +54,48 @@
                     <view key="view" contentMode="scaleToFill" id="qXo-oG-jYW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aM5-7f-MBo">
+                                <rect key="frame" x="46" y="120" width="294" height="721"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">1. Oatmeal with Berries
+
+2. Avocado Toast
+
+3. Banana Pancakes
+
+4. Omlet 
+      -2 Eggs 
+      -Spinach 
+      -Mushrooms 
+      -Cheese 
+      -Tomatoes 
+      -Bell Peppers 
+      -Onions 
+      -Avocado 
+      -Kale
+      -Salmon 
+      -Ham
+      -Bacon 
+
+5. Greek Yogurt with berries
+
+6. Chia seeds with berries
+
+7. Nuts
+</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.8972220138" green="0.82242122429999998" blue="0.98099297289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="bcW-8e-M6j"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wx9-sT-MKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="-3167"/>
+            <point key="canvasLocation" x="-49.275362318840585" y="-3167.4107142857142"/>
         </scene>
         <!--Meals-->
         <scene sceneID="swf-3P-Ax7">
@@ -129,6 +164,39 @@
                     <view key="view" contentMode="scaleToFill" id="kb6-mW-i1I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxJ-8x-X7O">
+                                <rect key="frame" x="171" y="127" width="166" height="581"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Proten 
+Chicken
+Fish 
+Tofu
+
+Greens
+Brussel Sprouts 
+Carrots
+Zucchini
+Squash 
+Asparagus 
+Green Beans
+Peas
+Broccoli
+Lentils
+Cauliflower
+Beets
+
+Starch
+Baked Potatoes
+Sweet Potatoes
+Mashed Potatoes
+Brown Rice
+</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.8972220138" green="0.82242122429999998" blue="0.98099297289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="4Cq-9w-Q8s"/>
                     </view>
@@ -1300,6 +1368,39 @@
                     <view key="view" contentMode="scaleToFill" id="TrP-31-Nwp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNy-aw-Wur">
+                                <rect key="frame" x="77" y="205" width="163" height="581"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">1. Salad 
+      -Lettuce
+      -Kale 
+      -Spinach
+      -Tomatoes
+      -Cucumber
+      -Arugula 
+      -Peppers 
+      -Carrots
+      -Olives
+      -Chickpeas
+
+2. Lettuce Wraps
+
+3. Protein Bowl
+      -Chicken 
+      -Fish
+      -Steak
+      -Brown Rice 
+      -Beans 
+      -Seafood
+
+4. Soup
+</string>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.8972220138" green="0.82242122429999998" blue="0.98099297289999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="yhg-gC-gxw"/>
                     </view>
