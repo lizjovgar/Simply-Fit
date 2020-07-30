@@ -411,7 +411,7 @@
         <!--Daily Journal-->
         <scene sceneID="68e-Ki-bwT">
             <objects>
-                <tableViewController id="0P9-Nw-6oc" sceneMemberID="viewController">
+                <tableViewController id="0P9-Nw-6oc" customClass="JournalTableViewController" customModule="Simply_Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tsZ-1a-3MN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -431,7 +431,11 @@
                             <outlet property="delegate" destination="0P9-Nw-6oc" id="bCk-bW-JVF"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Daily Journal" id="c4i-Yg-Le1"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Daily Journal" id="c4i-Yg-Le1">
+                        <barButtonItem key="rightBarButtonItem" title="+" image="plus" catalog="system" id="cV3-an-1aB"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLH-LA-pls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -964,7 +968,7 @@
         <scene sceneID="g9g-7E-MQf">
             <objects>
                 <navigationController title="Daily Journal" automaticallyAdjustsScrollViewInsets="NO" id="z5D-bZ-BpB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="QKX-rI-ctA"/>
+                    <tabBarItem key="tabBarItem" title="Journal" image="pencil.tip.crop.circle" catalog="system" id="QKX-rI-ctA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oZU-ft-FwT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -986,7 +990,9 @@
     <resources>
         <image name="circle.bottomthird.split" catalog="system" width="128" height="121"/>
         <image name="house" catalog="system" width="128" height="110"/>
+        <image name="pencil.tip.crop.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="rectangle.3.offgrid" catalog="system" width="128" height="80"/>
     </resources>
 </document>
