@@ -718,10 +718,10 @@
             </objects>
             <point key="canvasLocation" x="265" y="1250"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Entry View Controller-->
         <scene sceneID="wTb-jY-sbU">
             <objects>
-                <viewController id="fHA-tT-aOX" sceneMemberID="viewController">
+                <viewController id="fHA-tT-aOX" customClass="AddEntryViewController" customModule="Simply_Fit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Gx9-MZ-Ead">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -745,12 +745,18 @@
                                 <state key="normal" title="Add Journal Entry">
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="addTapped:" destination="fHA-tT-aOX" eventType="touchUpInside" id="Cep-Vd-fPN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="30Y-El-vyN"/>
                     </view>
                     <navigationItem key="navigationItem" id="drb-WY-mXO"/>
+                    <connections>
+                        <outlet property="textField" destination="oMV-fN-Dcb" id="ZLJ-0W-bLQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iik-Ho-vHe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
