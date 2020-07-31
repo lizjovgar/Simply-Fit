@@ -10,11 +10,11 @@ import UIKit
 
 class JournalTableViewController: UITableViewController {
 
-    var journalEntries : [JournalEntry] = []
+    var journalEntries : [JournalEntryCD] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        journalEntries = createJournalEntries()
+        //journalEntries = createJournalEntries()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -22,6 +22,16 @@ class JournalTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    func getJournalEntries() {
+      if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+        if let coreDataToDos = try? context.fetch(JournalEntryCD.fetchRequest()) as? [JournalEntryCD] {
+                print("\(coreDataToDos)")
+                journalEntries = coreDataToDos
+                tableView.reloadData()
+        }
+      }
+    }
+    /*
     func createJournalEntries() -> [JournalEntry] {
 
       let swift = JournalEntry()
@@ -35,11 +45,12 @@ class JournalTableViewController: UITableViewController {
 
       return [swift, dog]
     }
+    */
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,7 +58,7 @@ class JournalTableViewController: UITableViewController {
         return journalEntries.count
     }
 
-    
+   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
@@ -110,12 +121,14 @@ class JournalTableViewController: UITableViewController {
           addVC.previousVC = self
         }
         if let completeVC = segue.destination as? CompleteViewController {
-          if let journalEntry = sender as? JournalEntry {
+          if let journalEntry = sender as? JournalEntryCD {
             completeVC.selectedToDo = journalEntry
             completeVC.previousVC = self
           }
         }
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+      getJournalEntries()
+    }
 }

@@ -12,15 +12,21 @@ class CompleteViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel!
     var previousVC = JournalTableViewController()
-    var selectedToDo = JournalEntry()
+    var selectedToDo : JournalEntryCD?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        titleLabel.text = selectedToDo.date
+        titleLabel.text = selectedToDo?.date
     }
     
     @IBAction func deleteTapped(_ sender: Any) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+          if let theToDo = selectedToDo {
+            context.delete(theToDo)
+            navigationController?.popViewController(animated: true)
+          }
+        }
     }
     
 
