@@ -58,6 +58,13 @@ class JournalTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+      // this gives us a single ToDo
+      let journalEntry = journalEntries[indexPath.row]
+
+      performSegue(withIdentifier: "moveToComplete", sender: journalEntry)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -101,6 +108,12 @@ class JournalTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let addVC = segue.destination as? AddEntryViewController {
           addVC.previousVC = self
+        }
+        if let completeVC = segue.destination as? CompleteViewController {
+          if let journalEntry = sender as? JournalEntry {
+            completeVC.selectedToDo = journalEntry
+            completeVC.previousVC = self
+          }
         }
     }
     

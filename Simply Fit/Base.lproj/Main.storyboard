@@ -697,6 +697,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="kmX-22-hNo" kind="show" identifier="moveToComplete" id="2Ix-U8-QZ3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -717,6 +720,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLH-LA-pls" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="265" y="1250"/>
+        </scene>
+        <!--Complete View Controller-->
+        <scene sceneID="bTC-5c-buy">
+            <objects>
+                <viewController id="kmX-22-hNo" customClass="CompleteViewController" customModule="Simply_Fit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IlE-ob-exx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwI-41-hKp">
+                                <rect key="frame" x="170" y="140" width="74" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwV-NJ-EEF">
+                                <rect key="frame" x="349" y="734" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="kmX-22-hNo" eventType="touchUpInside" id="c91-q9-bmW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Yui-kO-UMZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Txj-wK-QMl"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="uwI-41-hKp" id="AyC-px-3aM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4o5-6f-wcn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="1997.5446428571427"/>
         </scene>
         <!--Add Entry View Controller-->
         <scene sceneID="wTb-jY-sbU">
@@ -749,12 +788,17 @@
                                     <action selector="addTapped:" destination="fHA-tT-aOX" eventType="touchUpInside" id="Cep-Vd-fPN"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2US-Si-wMF">
+                                <rect key="frame" x="327" y="834" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="30Y-El-vyN"/>
                     </view>
                     <navigationItem key="navigationItem" id="drb-WY-mXO"/>
                     <connections>
+                        <outlet property="switch" destination="2US-Si-wMF" id="lV8-k8-jT6"/>
                         <outlet property="textField" destination="oMV-fN-Dcb" id="ZLJ-0W-bLQ"/>
                     </connections>
                 </viewController>

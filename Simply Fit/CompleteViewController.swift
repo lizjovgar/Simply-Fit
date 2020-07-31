@@ -1,5 +1,5 @@
 //
-//  AddEntryViewController.swift
+//  CompleteViewController.swift
 //  Simply Fit
 //
 //  Created by Jax De Leon on 7/30/20.
@@ -8,30 +8,20 @@
 
 import UIKit
 
-class AddEntryViewController: UIViewController {
+class CompleteViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
     var previousVC = JournalTableViewController()
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var `switch`: UISwitch!
+    var selectedToDo = JournalEntry()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        titleLabel.text = selectedToDo.date
     }
     
-    @IBAction func addTapped(_ sender: Any) {
-        let journalEntry = JournalEntry()
-
-        if let titleText = textField.text {
-          journalEntry.date = titleText
-            
-        previousVC.journalEntries.append(journalEntry)
-        previousVC.tableView.reloadData()
-        navigationController?.popViewController(animated: true)
-        }
+    @IBAction func deleteTapped(_ sender: Any) {
     }
-    
     
 
     /*

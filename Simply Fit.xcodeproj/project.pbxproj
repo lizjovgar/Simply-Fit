@@ -20,6 +20,7 @@
 		FE159B5624D36554008C9FE4 /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE159B5524D36554008C9FE4 /* JournalTableViewController.swift */; };
 		FE159B5824D368DC008C9FE4 /* JournalEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE159B5724D368DC008C9FE4 /* JournalEntry.swift */; };
 		FE445F7524D3B4890048C0BE /* AddEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE445F7424D3B4890048C0BE /* AddEntryViewController.swift */; };
+		FE445F7724D3BC260048C0BE /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE445F7624D3BC260048C0BE /* CompleteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FE159B5524D36554008C9FE4 /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
 		FE159B5724D368DC008C9FE4 /* JournalEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalEntry.swift; sourceTree = "<group>"; };
 		FE445F7424D3B4890048C0BE /* AddEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryViewController.swift; sourceTree = "<group>"; };
+		FE445F7624D3BC260048C0BE /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				FE159B5324D2B4AB008C9FE4 /* MeditationViewController.swift */,
 				FE159B5524D36554008C9FE4 /* JournalTableViewController.swift */,
 				FE445F7424D3B4890048C0BE /* AddEntryViewController.swift */,
+				FE445F7624D3BC260048C0BE /* CompleteViewController.swift */,
 			);
 			path = "Simply Fit";
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				FE159B5024D2B445008C9FE4 /* MealsViewController.swift in Sources */,
 				FE159B5624D36554008C9FE4 /* JournalTableViewController.swift in Sources */,
 				FE445F7524D3B4890048C0BE /* AddEntryViewController.swift in Sources */,
+				FE445F7724D3BC260048C0BE /* CompleteViewController.swift in Sources */,
 				1862F9D124D1FABE00679319 /* InspirationViewController.swift in Sources */,
 				1862F9CD24D1FABE00679319 /* AppDelegate.swift in Sources */,
 				1862F9D924D1FABE00679319 /* Simply_Fit.xcdatamodeld in Sources */,
